@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Dosis, sans-serif;
+}
+/* fondo pag principal y scrollbar*/
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+/* fondo de las otras pags*/
+
+.pagina{
+    background-image: url(../assets/posible\ fondo.jpg);
+    background-size: cover;
+
+}
+/*barra de navegacion BS*/
+.navbar {
+    background-color: rgb(20, 19, 19);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 100px;
+    border-radius: 80%;
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i {
+    color: rgb(75, 156, 46);
+
+}
+
+.nav-link {
+    color: rgb(75, 156, 46) !important;
+
+}
+
+.nav-link:hover {
+    color: rgb(145, 203, 37) !important;
+}
+
+.pagina1 {
+    overflow: hidden;
+}
+
+#fondo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fondo video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+}
+/*bienvenida-home*/
+.bienvenida {
+    position: relative;
+    z-index: 20;
+}
+
+.bienvenida h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 13.36px 8.896px rgb(99, 155, 54), 0 -2px 1px rgb(224, 245, 193);
+}
+
+.bienvenida h2 {
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.contenido {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* menu de platos */
+
+.container{
+    padding-bottom: 100px;
+}
+
+
+.contenedor {
+    text-align: right;
+}
+
+.foto_main {
+    margin-left: 300px;
+    width: 10px;
+    height: 250px;
+}
+
+
+.menu {
+    font-size: .4rem;
+}
+
+.menu p {
+    font-size: 1rem;
+}
+
+.card-body-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+}
+
+.card:hover .card-body-overlay {
+    opacity: 1;
+}
+
+.text-center {
+    text-shadow: 0 13.36px 8.896px rgb(99, 155, 54), 0 -2px 1px rgb(224, 245, 193);
+}
+
+
+/* contacto-formulario*/
+.container h3 {
+    color: #fff;
+}
+
+form {
+    width: 400px;
+    margin: 50px auto 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(165, 210, 83);
+    border-radius: 4px;
+    background-color: rgb(229, 240, 209);
+    box-shadow: inset 0 0 5px rgb(188, 217, 135);
+}
+
+input[type="submit"] {
+    background-color: rgb(229, 240, 209);
+    color: #000;
+    padding: 10px 20px;
+    border: 2px solid rgb(165, 210, 83);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(165, 210, 8);
+}
+
+.container{
+    padding-bottom: 100px;
+}
+/* Contacto  */
+
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(75, 156, 46);
+    text-shadow: 0 13.36px 8.896px rgb(99, 155, 54), 0 -2px 1px rgb(224, 245, 193);
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+textarea {
+    height: 150px;
+}
+
+/*logos redes del footer*/
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: rgb(75, 156, 46);
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    margin: 20px;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+/* footer*/
+#footer {
+    margin-top: auto;
+    background-color: rgb(20, 19, 19);
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    font-size: large;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
