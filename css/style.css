@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: Dosis, sans-serif;
 }
+
 /* fondo pag principal y scrollbar*/
 body {
     font-family: 'Dosis', sans-serif;
@@ -28,13 +29,13 @@ section img {
     opacity: .8;
     transition: .5s ease;
 }
+
 /* fondo de las otras pags*/
-
-.pagina{
-    background-image: url(../assets/posible\ fondo.jpg);
+.pagina {
+    background-image: url(../assets/fondo.jpg);
     background-size: cover;
-
 }
+
 /*barra de navegacion BS*/
 .navbar {
     background-color: rgb(20, 19, 19);
@@ -89,6 +90,7 @@ section img {
     z-index: 5;
     object-fit: cover;
 }
+
 /*bienvenida-home*/
 .bienvenida {
     position: relative;
@@ -112,7 +114,6 @@ header {
     position: relative;
 }
 
-
 .contenido {
     font-size: 2rem;
     color: #fff;
@@ -120,10 +121,9 @@ header {
 
 /* menu de platos */
 
-.container{
+.container {
     padding-bottom: 100px;
 }
-
 
 .contenedor {
     text-align: right;
@@ -134,7 +134,6 @@ header {
     width: 10px;
     height: 250px;
 }
-
 
 .menu {
     font-size: .4rem;
@@ -164,7 +163,6 @@ header {
 .text-center {
     text-shadow: 0 13.36px 8.896px rgb(99, 155, 54), 0 -2px 1px rgb(224, 245, 193);
 }
-
 
 /* contacto-formulario*/
 .container h3 {
@@ -206,12 +204,11 @@ input[type="submit"]:hover {
     background-color: rgb(165, 210, 8);
 }
 
-.container{
+.container {
     padding-bottom: 100px;
 }
+
 /* Contacto  */
-
-
 .container h1 {
     text-align: center;
     font-size: 3rem;
