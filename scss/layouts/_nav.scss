@@ -1,0 +1,47 @@
+@import '../base/colors';
+/* BARRA DE NAVEGACION*/
+
+.navbar {
+    background-color: $color-primary;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 10;
+    align-items: center;
+
+    &-brand {
+        img {
+            height: 100px;
+            border-radius: 80%;
+            margin-left: 10px;
+        }
+    }
+
+    &-toggler {
+        border: none;
+
+        i {
+            color: $color-dgreen;
+        }
+    }
+
+    &-link {
+        color: $color-dgreen;
+
+        &:hover {
+            color: $color-lgreen;
+        }
+    }
+
+    &.navbar-dark {
+        .navbar-nav {
+            .nav-link {
+                color: $color-dgreen; 
+
+                &:hover {
+                    color: $color-lgreen; 
+                }
+            }
+        }
+    }
+}

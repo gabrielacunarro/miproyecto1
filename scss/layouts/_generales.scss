@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* fondo pag principal y scrollbar*/
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* BACKGROUNDS*/
+.pagina {
+    background-color: #141313;
+    text-decoration: none;
+    
+
+}
+
+.pagina1{
+    background-color: $color-tertiary;
+    
+    a{
+        text-decoration: none;
+        font-weight: 700;
+        color: $color-primary;
+
+        &:hover{
+            color: $color-dgreen;
+        }
+    }
+}
+
+.inicio1{
+    margin-top: 50px;
+    text-align: center;
+}

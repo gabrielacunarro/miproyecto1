@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,14 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Wix+Madefor+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/25fa1676a9.js" crossorigin="anonymous"></script>
+    <meta name="Author" lang="es" content="Gabriela Cuñarro"/>
     <title> Contacto</title>
     <link rel="icon" href="../assets/favicon.ico">
 </head>
+
 <body class="pagina">
     <!-- barra de menu inicia -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -48,19 +51,25 @@
         </div>
     </nav>
     <!-- fin de menu -->
-    <div class="container">
-        <h1>Contacto</h1>
-        <h3>Sugerencias? Comentarios? Envianos un e-mail! 👍</h3>
-        <form action="procesar.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
+    <!-- inicio formulario -->
+    <h2>Contacto</h2>
+    <form action="">
+        <input type="text" name="Nombre" placeholder="Ingrese su nombre">
+        <input type="text" name="Email" placeholder="Ingrese su email">
+        <input type="text" name="Teléfono" placeholder="Ingrese su teléfono">
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje">
+        </textarea>
+        <input type="button" value="ENVIAR" id="buttom">
+    </form>
+    <!-- fin formulario -->
+    <!-- Inicio mapa -->
+    
+    <div class="mapa">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.1505042017789!2d-58.37193888385406!3d-34.62019420191039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d315fc59f7%3A0xd9a368abf9f95156!2sSagardi%20Argentina!5e0!3m2!1ses-419!2sar!4v1688931352662!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <!-- fin mapa -->
+
     <!--inicio footer -->
     <div class="footer">
         <div class="grupo1">
@@ -73,9 +82,10 @@
             </div>
             <div class="box">
                 <h2> SOBRE NOSOTROS</h2>
-                <p>Fundado en 2018, Go Vegan Go nació de la visión de promover una alimentación consciente y respetuosa
+                <p>Fundado en 2018, Go Vegan Go nació de la visión de promover una alimentación consciente y
+                    respetuosa
                     con todos los seres vivos. Desde entonces, nos hemos convertido en un destino preferido para los
-                    amantes de la comida vegana en San Telmo- Buenos Aires- Argentina.</p>
+                    amantes de la comida vegana en San Telmo.</p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
@@ -101,4 +111,5 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

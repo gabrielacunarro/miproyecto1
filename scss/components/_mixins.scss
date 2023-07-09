@@ -1,0 +1,9 @@
+/* MIXINS*/
+
+@mixin input-styles {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}

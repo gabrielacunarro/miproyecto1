@@ -1,0 +1,15 @@
+/* BASE */
+@import '../scss/base/resets';
+@import '../scss/base/fonts';
+@import '../scss/base/colors';
+
+/* COMPONENTS*/
+@import '../scss/components/cards';
+@import '../scss/components/mixins';
+
+/* LAYOUTS*/
+@import '../scss/layouts/banner';
+@import '../scss/layouts/footer';
+@import '../scss/layouts/contacto';
+@import '../scss/layouts/generales';
+@import '../scss/layouts/nav';
