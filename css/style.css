@@ -94,7 +94,7 @@ h2 {
 }
 
 header {
-  background-image: url(/assets/header.png);
+  background: url(/assets/header.png);
   background-position: center;
   padding: 100px;
 }
