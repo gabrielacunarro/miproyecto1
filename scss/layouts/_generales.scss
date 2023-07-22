@@ -55,7 +55,7 @@ blockquote {
     padding-left: 10px; /* ver */
 }
 
-
+/* ICONO DE WHASTAPP*/
     .whatsapp {
         position: fixed;
         right: 25px;
@@ -79,18 +79,5 @@ blockquote {
     }
     100% {
       transform: scale(1); /* Escala normal */
-    }
-}
-
-.loaded {
-    opacity: 1;
-    transform: translateY(20px);
-    transition: opacity 0.6s , transform 0.6s ;
-    
-    &.loaded-invisible {
-        opacity: 0;
-        transform: translateY(0);
-        
-
     }
 }
