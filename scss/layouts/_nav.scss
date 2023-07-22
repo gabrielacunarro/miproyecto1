@@ -27,9 +27,11 @@
 
     &-link {
         color: $color-dgreen;
+        position: relative;
 
         &:hover {
             color: $color-lgreen;
+            
         }
     }
 
@@ -37,9 +39,12 @@
         .navbar-nav {
             .nav-link {
                 color: $color-dgreen; 
+                
 
                 &:hover {
                     color: $color-lgreen; 
+                    border-bottom: 4px outset $color-dgreen;
+                    
                 }
             }
         }

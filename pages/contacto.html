@@ -15,8 +15,21 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/25fa1676a9.js" crossorigin="anonymous"></script>
-    <meta name="Author" lang="es" content="Gabriela Cuñarro"/>
+    <meta name="Author" lang="es" content="Gabriela Cuñarro" />
     <title> Contacto</title>
+    <style>
+        /* Webkit - flechas del input number*/
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"]::-moz-number-spin-box {
+            -moz-appearance: textfield;
+        }
+    </style>
     <link rel="icon" href="../assets/favicon.ico">
 </head>
 
@@ -52,26 +65,33 @@
     </nav>
     <!-- fin de menu -->
     <!-- inicio formulario -->
-    <h2>Contacto</h2>
+    <header >
+        <h2>CONTACTO</h2>
+    </header>
     <form action="">
-        <input type="text" name="Nombre" placeholder="Ingrese su nombre">
-        <input type="text" name="Email" placeholder="Ingrese su email">
-        <input type="text" name="Teléfono" placeholder="Ingrese su teléfono">
-        <textarea name="mensaje" placeholder="Escriba aquí su mensaje">
-        </textarea>
-        <input type="button" value="ENVIAR" id="buttom">
+        <label for="nombre">Nombre:</label>
+        <input required type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre">
+        <label for="email">Email:</label>
+        <input required type="email" name="Email" id="email" placeholder="Ingrese su email">
+        <label for="teléfono">Teléfono:</label>
+        <input type="number" name="Teléfono" id="teléfono" placeholder="Ingrese su teléfono">
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+        <button type="submit">
+            <span>ENVIAR</span>
+        </button>
     </form>
     <!-- fin formulario -->
     <!-- Inicio mapa -->
-    
     <div class="mapa">
-        <h2>Ubicación</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.1505042017789!2d-58.37193888385406!3d-34.62019420191039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d315fc59f7%3A0xd9a368abf9f95156!2sSagardi%20Argentina!5e0!3m2!1ses-419!2sar!4v1688931352662!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.1505042017789!2d-58.37193888385406!3d-34.62019420191039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d315fc59f7%3A0xd9a368abf9f95156!2sSagardi%20Argentina!5e0!3m2!1ses-419!2sar!4v1688931352662!5m2!1ses-419!2sar"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- fin mapa -->
-
     <!--inicio footer -->
-    <div class="footer">
+    <footer class="footer">
         <div class="grupo1">
             <div class="box">
                 <figure>
@@ -99,8 +119,15 @@
         <div class="grupo2">
             <small>&copy; 2023 <strong>GO VEGAN GO</strong> - Todos los Derechos Reservados.</small>
         </div>
-    </div>
+    </footer>
     <!-- fin footer -->
+    <!-- inicio boton whastapp -->
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=54123456789&text=Hola+quiero+hacer+una+consulta..." target="_blank">
+        <img src="/assets/wpp.ico.ico" class="img-fluid" >
+    </a>
+    </div>
+    <!-- fin boton whastapp -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

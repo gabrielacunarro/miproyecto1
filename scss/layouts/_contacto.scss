@@ -1,22 +1,33 @@
 @import '../base/colors';
 @import '../base/fonts';
 @import '../components/mixins';
+/* HEADER CONTACTO */
+
+header {
+    background-image: url(/assets/header_contacto.png);
+    background-position: center;
+    padding: 100px;
+}
+
 /* FORMULARIO*/
-h2{
-    text-align: center;
-    margin:20px 0 30px;
+h1{
+    text-align: left;
+    margin:20px 0 30px 120px;
 }
 
 form{
-    width: 450px;
+    width: 650px;
     margin: auto;
-    background-color: rgba(182, 184, 182, 0.2);
-    padding: 10px 20px;
+    padding: 30px 30px;
     margin-top: 20px;
-    border-radius: 12px;
 
     input,textarea{
         @include input-styles;
+        border-radius: 3px;
+        
+        &:focus {
+            outline-color: $color-lgreen;
+        }
     }
 
     textarea{
@@ -25,17 +36,33 @@ form{
         max-width: 100%;
     }
 
-    #buttom{
-        background-color: $color-dgreen;
-        color: $color-secondary;
-        padding: 15px;
-        width: auto;
-        
+    button{
+        border: none;
+        background-image: linear-gradient(150deg, $color-lgreen ,$color-dgreen, $color-lblue,$color-dblue);
+        padding: 4px;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        font-size: 18px;
+        transition: .3s;
+        overflow: hidden;
+        position: relative;
 
-        &:hover{
-            background-color:$color-lgreen ;
+        span {
+            background-color: #111;
+            padding: 16px 24px;
+            border-radius: 6px;
+            transition: .3s;
+
+            &:hover {
+                background:none
+            }
         }
     }
+}
+
+label{
+    color: $color-secondary;
 }
 
 @media (max-width:480px) {
@@ -45,6 +72,9 @@ form{
     
 }
 
-.mapa{
-    margin: 30px 0 0;
+.mapa {
+    width: 100%;
+    height: 400px; 
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

@@ -1,8 +1,13 @@
 @import '../base/colors';
 
 /* CARDS*/
+
+.container{
+    padding:50px 0 80px;
+}
 .card-body-overlay {
     position: absolute;
+    text-align: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,6 +18,9 @@
     transition: opacity 0.3s ease;
     padding: 1rem;
 
+    .card-title {
+        font-weight: bold;
+    }
     .card:hover & {
         opacity: 1;
     }
@@ -20,13 +28,9 @@
 
 /* CARDS CATERING*/
 
-.card-body{
-    gap: 50px;
-}
 
 .card {
     top: 50px;
-    
     transition: transform 0.2s ease;
 
     &:hover{
@@ -34,3 +38,5 @@
         box-shadow: 0 4px 1px $color-lgreen;
     }
 }
+
+

@@ -30,8 +30,13 @@ h2 {
 /* COMPONENTS*/
 /* PALETA DE COLORES*/
 /* CARDS*/
+.container {
+  padding: 50px 0 80px;
+}
+
 .card-body-overlay {
   position: absolute;
+  text-align: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -42,15 +47,14 @@ h2 {
   transition: opacity 0.3s ease;
   padding: 1rem;
 }
+.card-body-overlay .card-title {
+  font-weight: bold;
+}
 .card:hover .card-body-overlay {
   opacity: 1;
 }
 
 /* CARDS CATERING*/
-.card-body {
-  gap: 50px;
-}
-
 .card {
   top: 50px;
   transition: transform 0.2s ease;
@@ -66,28 +70,18 @@ h2 {
 .hero {
   width: 100%;
   height: 700px;
-  /* esta es la altura  */
   background-color: rgb(255, 255, 255);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .hero h1 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   z-index: 3;
-  /* calculamos la mitad de la altura del contenedor menos la altura de la fuente para lograr centrar */
-  padding: 300px 0;
-  /* el primer valor del padding corresponde aL eje vertical y el 0 corresponde al eje horizontal si se precisa se puede modificar */
 }
 .hero h2 {
-  position: absolute;
-  top: 60%; /* Ajusta la posición vertical según tus necesidades */
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 30px;
   z-index: 3;
 }
@@ -100,13 +94,13 @@ h2 {
 }
 
 /* FOOTER*/
-.footer {
+footer {
   margin-top: 50px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-top: 1px solid #fff;
 }
-.footer .grupo1 {
+footer .grupo1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -115,27 +109,27 @@ h2 {
   grid-gap: 50px;
   padding: 45px 0px;
 }
-.footer .grupo1 .box figure {
+footer .grupo1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .grupo1 .box figure img {
+footer .grupo1 .box figure img {
   width: 110px;
 }
-.footer .grupo1 .box h2 {
+footer .grupo1 .box h2 {
   color: #000000;
   margin-bottom: 25px;
   font-size: 20px;
   text-align: left;
 }
-.footer .grupo1 .box p {
+footer .grupo1 .box p {
   color: #000000;
   margin-bottom: 10px;
 }
-.footer .grupo1 .red-social a {
+footer .grupo1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -147,20 +141,20 @@ h2 {
   text-align: center;
   transition: all 300ms ease;
 }
-.footer .grupo1 .red-social a:hover {
+footer .grupo1 .red-social a:hover {
   color: rgb(165, 210, 8);
 }
-.footer .grupo2 {
+footer .grupo2 {
   background-color: rgb(0, 0, 0);
   padding: 15px 10px;
   text-align: center;
   color: #ffffff;
 }
-.footer .grupo2 small {
+footer .grupo2 small {
   font-size: 15px;
 }
 @media screen and (max-width: 800px) {
-  .footer .grupo1 {
+  footer .grupo1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
@@ -186,19 +180,24 @@ h2 {
 }
 
 /* MIXINS*/
+/* HEADER CONTACTO */
+header {
+  background-image: url(/assets/header_contacto.png);
+  background-position: center;
+  padding: 100px;
+}
+
 /* FORMULARIO*/
-h2 {
-  text-align: center;
-  margin: 20px 0 30px;
+h1 {
+  text-align: left;
+  margin: 20px 0 30px 120px;
 }
 
 form {
-  width: 450px;
+  width: 650px;
   margin: auto;
-  background-color: rgba(182, 184, 182, 0.2);
-  padding: 10px 20px;
+  padding: 30px 30px;
   margin-top: 20px;
-  border-radius: 12px;
 }
 form input, form textarea {
   width: 100%;
@@ -206,20 +205,40 @@ form input, form textarea {
   padding: 5px;
   box-sizing: border-box;
   font-size: 15px;
+  border-radius: 3px;
+}
+form input:focus, form textarea:focus {
+  outline-color: #91CB25;
 }
 form textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
 }
-form #buttom {
-  background-color: #4B9C2E;
+form button {
+  border: none;
+  background-image: linear-gradient(150deg, #91CB25, #4B9C2E, #54B9C5, #006A75);
+  padding: 4px;
+  border-radius: 8px;
   color: #fff;
-  padding: 15px;
-  width: auto;
+  display: flex;
+  font-size: 18px;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
 }
-form #buttom:hover {
-  background-color: #91CB25;
+form button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+form button span:hover {
+  background: none;
+}
+
+label {
+  color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -228,7 +247,10 @@ form #buttom:hover {
   }
 }
 .mapa {
-  margin: 30px 0 0;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 * {
@@ -260,21 +282,61 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
-.pagina1 {
+.inicio1 {
+  padding: 25px;
+  text-align: center;
   background-color: #b6b8b6;
 }
-.pagina1 a {
+.inicio1 a {
   text-decoration: none;
   font-weight: 700;
   color: #000;
 }
-.pagina1 a:hover {
-  color: #4B9C2E;
+.inicio1 a:hover {
+  color: #fff;
 }
 
-.inicio1 {
-  margin-top: 50px;
-  text-align: center;
+.bienvenido {
+  background-color: #91CB25;
+  padding: 100px;
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 10px; /* ver */
+}
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 80px;
+  z-index: 10;
+}
+.whatsapp img {
+  width: 50px;
+  height: 50px;
+  animation: pulseAnimation 2s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1); /* Escala normal */
+  }
+  50% {
+    transform: scale(1.2); /* Escala más grande */
+  }
+  100% {
+    transform: scale(1); /* Escala normal */
+  }
+}
+.loaded {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.loaded.loaded-invisible {
+  opacity: 0;
+  transform: translateY(0);
 }
 
 /* PALETA DE COLORES*/
@@ -300,6 +362,7 @@ body::-webkit-scrollbar {
 }
 .navbar-link {
   color: #4B9C2E;
+  position: relative;
 }
 .navbar-link:hover {
   color: #91CB25;
@@ -309,6 +372,7 @@ body::-webkit-scrollbar {
 }
 .navbar.navbar-dark .navbar-nav .nav-link:hover {
   color: #91CB25;
+  border-bottom: 4px outset #4B9C2E;
 }
 
 /*# sourceMappingURL=style.css.map */
