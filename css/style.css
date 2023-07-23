@@ -31,7 +31,7 @@ h2 {
 /* PALETA DE COLORES*/
 /* CARDS*/
 .container {
-  padding: 50px 0 80px;
+  margin-top: 70px;
 }
 
 .card-body-overlay {
@@ -56,7 +56,6 @@ h2 {
 
 /* CARDS CATERING*/
 .card {
-  top: 50px;
   transition: transform 0.2s ease;
 }
 .card:hover {
@@ -80,6 +79,8 @@ h2 {
 .hero h1 {
   font-size: 45px;
   z-index: 3;
+  text-align: center;
+  margin: 0;
 }
 .hero h2 {
   font-size: 30px;
@@ -123,7 +124,7 @@ footer .grupo1 {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-gap: 20px;
   padding: 45px 0px;
 }
 footer .grupo1 .box figure {
@@ -153,7 +154,6 @@ footer .grupo1 .red-social a {
   height: 45px;
   line-height: 45px;
   color: #fff;
-  margin-right: 15px;
   background-color: rgb(36, 34, 34);
   text-align: center;
   transition: all 300ms ease;
@@ -318,16 +318,64 @@ body::-webkit-scrollbar {
   color: #fff;
 }
 
+/* BIENVENIDA PÁGINA PRINCIPAL*/
 .bienvenido {
   background-color: #91CB25;
   padding: 100px;
 }
 
-blockquote {
-  font-style: italic;
-  padding-left: 10px; /* ver */
+.blockquote-wrapper {
+  display: flex;
+  padding: 0 20px;
 }
 
+.blockquote {
+  position: relative;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  margin: 80px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+.blockquote h1 {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 60px;
+  }
+}
+.blockquote:after {
+  position: absolute;
+  content: "”";
+  color: rgb(255, 255, 255);
+  font-size: 10rem;
+  line-height: 0;
+  bottom: -43px;
+  right: 30px;
+}
+.blockquote h4 {
+  position: relative;
+  color: #292a2b;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+/* FIN QUOTES*/
 /* ICONO DE WHASTAPP*/
 .whatsapp {
   position: fixed;
@@ -384,8 +432,9 @@ blockquote {
   color: #4B9C2E;
 }
 .navbar.navbar-dark .navbar-nav .nav-link:hover {
+  padding-top: 5px;
   color: #91CB25;
-  border-bottom: 4px outset #4B9C2E;
+  border-bottom: 2px outset #4B9C2E;
 }
 
 /*# sourceMappingURL=style.css.map */

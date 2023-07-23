@@ -8,7 +8,6 @@
     font-weight: bold;
     z-index: 10;
     align-items: center;
-
     &-brand {
         img {
             height: 100px;
@@ -16,15 +15,12 @@
             margin-left: 10px;
         }
     }
-
     &-toggler {
         border: none;
-
         i {
             color: $color-dgreen;
         }
     }
-
     &-link {
         color: $color-dgreen;
         position: relative;
@@ -34,17 +30,15 @@
             
         }
     }
-
     &.navbar-dark {
         .navbar-nav {
             .nav-link {
                 color: $color-dgreen; 
-                
 
                 &:hover {
+                    padding-top: 5px;
                     color: $color-lgreen; 
-                    border-bottom: 4px outset $color-dgreen;
-                    
+                    border-bottom: 2px outset $color-dgreen;
                 }
             }
         }

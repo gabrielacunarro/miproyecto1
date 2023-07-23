@@ -3,7 +3,7 @@
 /* CARDS*/
 
 .container{
-    padding:50px 0 80px;
+    margin-top: 70px;
 }
 .card-body-overlay {
     position: absolute;
@@ -29,8 +29,8 @@
 /* CARDS CATERING*/
 
 
+
 .card {
-    top: 50px;
     transition: transform 0.2s ease;
 
     &:hover{
@@ -38,5 +38,4 @@
         box-shadow: 0 4px 1px $color-lgreen;
     }
 }
-
 
