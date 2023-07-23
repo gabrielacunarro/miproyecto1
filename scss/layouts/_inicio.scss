@@ -1,14 +1,68 @@
+@import '../base/colors';
+@import '../base/fonts';
 /* BIENVENIDA PÁGINA PRINCIPAL*/
-.bienvenido{
-    background-color: $color-lgreen;
-    padding: 100px;
+
+.bienvenido {
+    background-color: $color-secondary;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .texto {
+        margin-top: 100px;
+        margin-left: 10px;
+        padding-right: 20px;
+        
+        h4 {
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: larger;
+        }
+    }
+
+    .imagen-fundadoras {
+        img {
+            max-width: 100%;
+            border-radius: 30px;
+            display: block;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+
+        .texto {
+            flex: 2;
+            margin-top: 0; // Elimina el margen superior para que el texto esté alineado con la imagen
+        }
+
+        .imagen-fundadoras {
+            flex: 1;
+            max-width: 100%; // Establece un ancho máximo para la imagen para que ocupe la mitad del ancho en pantallas grandes
+            align-self: center;
+            
+        }
+    }
 }
+
+
+
+
 
 
 // Center the blockquote in the page
 .blockquote-wrapper {
     display: flex;
     padding: 0 20px;
+    background-color: $color-lgreen;
 }
 
 // Blockquote main style

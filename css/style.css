@@ -2,6 +2,7 @@
 /* BASE */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -378,5 +379,120 @@ body::-webkit-scrollbar {
   color: #91CB25;
   border-bottom: 2px outset #4B9C2E;
 }
+
+/* PALETA DE COLORES*/
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* BIENVENIDA PÁGINA PRINCIPAL*/
+.bienvenido {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bienvenido .texto {
+  margin-top: 100px;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+.bienvenido .texto h4 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+.bienvenido .texto p {
+  font-size: larger;
+}
+.bienvenido .imagen-fundadoras img {
+  max-width: 100%;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .bienvenido {
+    flex-direction: row;
+    align-items: center;
+  }
+  .bienvenido .texto {
+    flex: 2;
+    margin-top: 0;
+  }
+  .bienvenido .imagen-fundadoras {
+    flex: 1;
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
+.blockquote-wrapper {
+  display: flex;
+  padding: 0 20px;
+  background-color: #91CB25;
+}
+
+.blockquote {
+  position: relative;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  margin: 80px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+.blockquote h1 {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 60px;
+  }
+}
+.blockquote:after {
+  position: absolute;
+  content: "”";
+  color: rgb(255, 255, 255);
+  font-size: 10rem;
+  line-height: 0;
+  bottom: -43px;
+  right: 30px;
+}
+.blockquote h4 {
+  position: relative;
+  color: #292a2b;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+/* FIN QUOTES*/
 
 /*# sourceMappingURL=style.css.map */
