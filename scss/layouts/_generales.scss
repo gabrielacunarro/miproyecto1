@@ -21,55 +21,39 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-
 /* BACKGROUNDS*/
 .pagina {
     background-color: #141313;
     text-decoration: none;
 }
 
-.inicio1{
-    padding: 25px;
-    text-align: center;
-    background-color: $color-tertiary;
-    
-    
-    a{
-        text-decoration: none;
-        font-weight: 700;
-        color: $color-primary;
+/* ICONO DE WHASTAPP*/
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    z-index: 10;
 
-        &:hover{
-            color: $color-secondary;
-        }
+    img {
+        width: 100px;
+        height: 100px;
+        animation: pulseAnimation 2s infinite;
     }
 }
-
-
-/* ICONO DE WHASTAPP*/
-    .whatsapp {
-        position: fixed;
-        right: 25px;
-        bottom: 50px;
-        z-index: 10;
-    
-            img{
-                width: 30px;
-                height: 30px;
-                animation: pulseAnimation 2s infinite;
-            }
-    }
-
 
 @keyframes pulseAnimation {
     0% {
-      transform: scale(1); /* Escala normal */
+        transform: scale(0.3);
+        /* Escala normal */
     }
+
     50% {
-      transform: scale(1.2); /* Escala más grande */
+        transform: scale(0.4);
+        /* Escala más grande */
     }
+
     100% {
-      transform: scale(1); /* Escala normal */
+        transform: scale(0.3);
+        /* Escala normal */
     }
 }
-
